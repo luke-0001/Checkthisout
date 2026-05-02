@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      html{
+        font-size: 62.5%;
+      }
+
+      .card{
+        background-color: #ffdefd;
+        width: 80%;
+        color: rgb(78, 0, 78);
+        align-self: center;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        margin: 0 auto;
+        text-align: center;
+        font-size: .8rem;
+      }
+
+      .bottom{
+        line-height: 1rem;
+      }
+
+      .bottom p{
+        font-size: .8rem;
+      }
+
+
+      .imagebtn{
+        border: none;
+        padding: 0.2rem 2rem;
+        border-radius: .3rem;
+        background-color: rgb(192, 221, 247);
+        color: rgb(39, 16, 39);
+        box-shadow: 0.1rem 0.1rem 0.5rem rgb(38, 0, 39);
+      }
+
+      .imagebtn:hover{
+        transform: scale(1.05);
+        transition: all 0.3s;
+      }
+
+
+      .slider-container{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        width:fit-content;
+        border-radius: 1rem;
+        padding: 1rem 0rem;
+      }
+
+
+      slider-container::-webkit-scrollbar{
+        display: none;
+      }
+
+
+      .slider-container img{
+        flex-shrink: 0;
+        width: 100%;
+        height:fit-content;
+        object-fit:contain;
+        scroll-snap-align: center;
+        border-radius: .8rem;
+        align-self: center;
+        transform: scale(1.0005);
+      }
+
+
+
+      @media(max-width:480px){
+        html{
+          font-size: 62.5%;
+        }
+
+        .header{
+          width: 60%;
+        }
+
+        .header h1{
+          font-size: 1rem;
+        }
+
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: rgb(255, 152, 255);
+      font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+    "
+  >
+    <div
+      class="header"
+      style="
+        background-color: #fff;
+        border-radius: 0.8rem;
+        padding: 0.3rem 1.9rem;
+        color: rgb(163, 0, 163);
+        max-width: fit-content;
+        margin: 0 auto;
+        margin-top: 3rem;
+        text-align: center;
+      "
+    >
+      <h1 style="margin-bottom: 0rem">
+        Happy Birthday
+        <br>Alex-Nwokamma Amarachi Grace
+      </h1>
+      <p style="justify-self: center; margin-top: 0rem; font-size: 0.8rem">
+        Or should I say 'Mi Chica '
+      </p>
+    </div>
+
+    <div class="mid"
+      style="
+        background-color: aliceblue;
+        padding: 0.5rem 0.8rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+        width: 80%;
+        justify-self: center;
+       ">
+        <p style="font-size: 0.8rem; text-align: center">
+          Hello there, I heard it's your birthday today or should I say, our
+          Birthday... I really don't know why you decided to share my birthday
+          with me, but then again I am really glad that we share the same
+          birthday.
+          <br />
+          You coming into my life this year was considered a really fresh start, I
+          had to rid my mind off the fact that we've known each other for years...
+          because I really didn't know what to expect. But mehn... I was blown
+          away with how quickly I got attached, even after telling myself that I
+          wouldn't.
+          <br />
+          I saw myself finally interested in someone again, saw myself being in
+          love again, and be loved back...
+          <br />
+          <br />
+          <p style="text-decoration: none; font-size: 0.8rem; text-align: center;"
+            >Abi you no love me? <br>
+            Don't rush your answer o, calm down and think about it (You can only select one option)
+          </p
+          >
+        </p>
+
+      <div style="display: flex; gap: 2rem; justify-self: center; margin-bottom: 1.7rem;">
+        <button
+          style="
+            width: 6rem;
+            height: fit-content;
+            border-radius: 20rem;
+            border: none;
+            box-shadow: 0.1rem 0.1rem 0.5rem rgb(38, 0, 39);
+          "
+          onclick="loved()"
+        >
+          <p style="font-size: 0.5rem; font-weight: bold">I love you</p>
+        </button>
+
+        <button
+          style="
+            width: 6rem;
+            height: fit-content;
+            border-radius: 20rem;
+            border: none;
+            box-shadow: 0.1rem 0.1rem 0.5rem rgb(38, 0, 39);
+          "
+          onclick="unloved()"
+        >
+          <p style="font-size: 0.5rem; font-weight: bold">I don't love you</p>
+        </button>
+      </div>
+    </div>
+
+
+    <div style="display: block;" id="YesNo">
+
+    </div>
+
+    <!-- <img src="../images/image1.jpg" alt="">
+    <img src="../images/image2.jpg" alt="">
+    <img src="../images/image3.jpg" alt="">
+    <img src="../images/image4.jpg" alt="">
+    <img src="../images/image5.jpg" alt="">
+    <img src="../images/image6.jpg" alt="">
+    <img src="../images/image7.jpg" alt="">
+    <img src="../images/image8.jpg" alt="">
+    <img src="../images/image9.jpg" alt=""> -->
+
+    <div >
+
+    </div>
+    
+    
+  </body>
+
+
+  <script>
+    const answer = document.getElementById('YesNo')
+
+    function loved(){
+          answer.innerHTML= ''
+          const card = document.createElement('div');
+          card.className = 'card'
+          card.innerHTML = `
+             ... Well well, loook who is in love. I love you too baby. well back to my story... you mean a whole lot to me and I really want you to understand that, I've had days when I would tell myself that I would rather just be by  myself, no calls or text, just me doing my thing, and then my phone rings <b>'Mi Chica'</b> calls, and boom, my whole mood changes, just one call brightens up my day.
+             </br>
+             I want you to understand one thing, you are an amazing person, the level of hardwork you put into your buisiness, commitment to your studies, you blend it all so well, maybe, i should start taking classes from you LOL.
+             </br>
+             I pray age 19 comes with God's favour and more opportunities for you, I pray you find yourself in positions that you prayed earnesty for.
+             </br>
+             keep being the amazing person that you are my Love... and keep soaring higher. I love you so much
+             </br>
+             </br>
+
+             <div class = 'bottom'>
+             <p>
+              I hope I didn't bore you, if I did here are some pictures that I hope would make you smile
+             </p>
+             </br>
+             <button class = 'imagebtn' onclick= 'viewImages()'>View Images</button>
+             </div>
+             <div class = 'images'></div>
+
+
+          `
+
+            
+
+
+          answer.appendChild(card)
+    }
+
+
+    
+    
+    function viewImages(){
+
+
+
+      const images = document.querySelector('.images')
+
+      if(images){
+      images.innerHTML = ''
+      const sliderContainer = document.createElement('div')
+      sliderContainer.className = 'slider-container'
+      sliderContainer.innerHTML = `
+
+        <img src="../images/image1.jpg" alt="">
+        <img src="../images/image2.jpg" alt="">
+        <img src="../images/image3.jpg" alt="">
+        <img src="../images/image4.jpg" alt="">
+        <img src="../images/image5.jpg" alt="">
+        <img src="../images/image6.jpg" alt="">
+        <img src="../images/image7.jpg" alt="">
+        <img src="../images/image8.jpg" alt="">
+        <img src="../images/image9.jpg" alt="">
+
+      `
+      images.appendChild(sliderContainer)
+      }
+    }
+
+
+
+    function unloved(){
+      const card = document.createElement('div');
+      answer.innerHTML= ''
+      card.className = 'card'
+      card.innerHTML = `
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sint nisi non ad quod harum id esse a iusto sequi! Beatae tempora, debitis doloremque odio deleniti perspiciatis! Molestiae eveniet obcaecati quibusdam iste odit delectus distinctio architecto magnam perferendis. Labore laboriosam ea atque culpa repudiandae odit tempora optio consequuntur nesciunt magnam.
+      `
+      answer.appendChild(card)
+    }
+
+    
+  </script>
+</html>
