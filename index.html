@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <style>
 
       html{
@@ -32,7 +33,7 @@
         width: 80%;
         color: rgb(78, 0, 78);
         align-self: center;
-        padding: 1rem 2rem;
+        padding: 3rem 2rem;
         border-radius: .5rem;
         margin: 0 auto;
         text-align: center;
@@ -97,6 +98,17 @@
       }
 
 
+      .apology{
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: aliceblue;
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: .5rem;
+        padding: 2rem 2.5rem;
+        margin-top: 3rem;
+      }
+
 
       @media(max-width:480px){
         html{
@@ -133,12 +145,20 @@
         text-align: center;
       "
     >
-      <p style="margin-bottom: 0rem">
-        <b>Happy Birthday</b>, Amarachi (<b>Ama</b>)
+      <p style="font-size: 1.7rem; align-self: center;">
+        Happy Birthday, <b>My Dearest</b>
       </h1>
-      <p style="justify-self: center; margin-top: 0rem; font-size: 0.8rem">
+      <!-- <p style="justify-self: center; margin-top: 0rem; font-size: 0.8rem">
         Or should I say <b style="color:rgb(172, 0, 0) ;">'Mi Chica'</b>
-      </p>
+      </p> -->
+    </div>
+    
+    <div class="apology">
+        <p>And this is my apology, if you haven't received your gift in full, The delivery was supposed to take three days, but it still hasn't arrived, I am really sorry aboout it baby... I didn't expect it to arrive late...
+        <br>
+        If you want a sneak peek of it, use the link below to ask for it</p>
+        <br>
+        <a href="https://wa.me/+2349167857859?text=Hi,I%20would%20like%20tosee%20the%20gift."> See Gift </a>
     </div>
 
     <div class="mid"
@@ -220,9 +240,7 @@
     <img src="../images/image8.jpg" alt="">
     <img src="../images/image9.jpg" alt=""> -->
 
-    <div >
-
-    </div>
+    
     
     
   </body>
@@ -248,7 +266,7 @@
 
              <div class = 'bottom'>
              <p>
-              <em>I hope I didn't bore you, if I did here are some pictures that I hope would make you smile</em>
+              <em>I hope I didn't bore you, if I did here are some pictures of moments we shared, that I hope would make you smile</em>
              </p>
              </br>
              <button class = 'imagebtn' onclick= 'viewImages()'>Relive the moments</button>
@@ -288,6 +306,8 @@
         <img src="image7.jpg" alt="">
         <img src="image8.jpg" alt="">
         <img src="image9.jpg" alt="">
+        <img src="image10.jpg" alt="">
+        <img src="image11.jpg" alt="">
 
       `
       images.appendChild(sliderContainer)
@@ -301,11 +321,57 @@
       answer.innerHTML= ''
       card.className = 'card'
       card.innerHTML = `
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sint nisi non ad quod harum id esse a iusto sequi! Beatae tempora, debitis doloremque odio deleniti perspiciatis! Molestiae eveniet obcaecati quibusdam iste odit delectus distinctio architecto magnam perferendis. Labore laboriosam ea atque culpa repudiandae odit tempora optio consequuntur nesciunt magnam.
+        Well what can I say, I didn't expect you to click this one. Happy birthday though.
+        Now you shouldn't be able to click the other button, but I didn't want to implement that...
       `
       answer.appendChild(card)
     }
 
-    
-  </script>
-</html>
+
+//       const words = document.getElementById('apology');
+//       function apology(){
+      
+
+//       if(apology){
+//         words.appendChild(apology)
+//       }
+//       }
+
+//       function lockSelection(){
+//         loved.style.display = 'none' ;
+//         unloved.style.display = 'none' ;
+//         card.style.display = 'block';
+//         const savedChoice = localStorage.getItem('userChoice');
+
+//         if(savedChoice === 'love'){
+//           loved()
+//         }
+
+//         else if(savedChoice=== unloved){
+//           unloved()
+//         }
+//       }
+
+
+
+//       window.onload = function(){
+//         if(localStorage.getItem('hasVoted') === 'true'){
+//           lockVoting();
+//         }
+//       }
+
+//       loved.addEventListener('click' , () =>{
+//         localStorage.setItem('hasVoted', 'true');
+//         lockVoting();
+//         localStorage.setItem('userChoice', 'love')
+//       });
+
+
+//       unloved.addEventListener('click', () =>{
+//         localStorage.setItem('hasVoted', 'true');
+//         lockVoting();
+//         alert('response recorded')
+//       })
+      
+ </script>
+// </html>
